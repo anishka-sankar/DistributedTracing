@@ -1,0 +1,253 @@
+2022-10-18 14:26:07.420  INFO [APP-ONE,,] 20840 --- [main] c.d.Appone.AppOneApplication             : Starting AppOneApplication using Java 15.0.2 on LAPTOP-IQ509ICI with PID 20840 (C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one\target\classes started by anish in C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one)
+2022-10-18 14:26:07.424  INFO [APP-ONE,,] 20840 --- [main] c.d.Appone.AppOneApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-10-18 14:26:08.623  INFO [APP-ONE,,] 20840 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4916a986-82b0-3328-9201-7304d8c35156
+2022-10-18 14:26:09.368  INFO [APP-ONE,,] 20840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-18 14:26:09.383  INFO [APP-ONE,,] 20840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-18 14:26:09.383  INFO [APP-ONE,,] 20840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-18 14:26:09.547  INFO [APP-ONE,,] 20840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-18 14:26:09.547  INFO [APP-ONE,,] 20840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2044 ms
+2022-10-18 14:26:09.987  WARN [APP-ONE,,] 20840 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'proxy'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.distributedTracing.Appone.Proxy' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-10-18 14:26:10.993  WARN [APP-ONE,,] 20840 --- [main] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2022-10-18 14:26:10.997  INFO [APP-ONE,,] 20840 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-18 14:26:11.013  INFO [APP-ONE,,] 20840 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-18 14:26:11.037 ERROR [APP-ONE,,] 20840 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field proxy in com.distributedTracing.Appone.Controller required a bean of type 'com.distributedTracing.Appone.Proxy' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.distributedTracing.Appone.Proxy' in your configuration.
+
+2022-10-18 14:26:11.038  INFO [APP-ONE,,] 20840 --- [Thread-2] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+2022-10-18 16:47:00.130  INFO [APP-ONE,,] 7476 --- [main] c.d.Appone.AppOneApplication             : Starting AppOneApplication using Java 15.0.2 on LAPTOP-IQ509ICI with PID 7476 (C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one\target\classes started by anish in C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one)
+2022-10-18 16:47:00.134  INFO [APP-ONE,,] 7476 --- [main] c.d.Appone.AppOneApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-10-18 16:47:01.307  INFO [APP-ONE,,] 7476 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5a685914-970e-3e02-b608-d62acf4ca15c
+2022-10-18 16:47:02.073  INFO [APP-ONE,,] 7476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-18 16:47:02.086  INFO [APP-ONE,,] 7476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-18 16:47:02.086  INFO [APP-ONE,,] 7476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-18 16:47:02.264  INFO [APP-ONE,,] 7476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-18 16:47:02.264  INFO [APP-ONE,,] 7476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2067 ms
+2022-10-18 16:47:02.989  INFO [APP-ONE,,] 7476 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'APP-TWO' URL not provided. Will try picking an instance via load-balancing.
+2022-10-18 16:47:03.901  INFO [APP-ONE,,] 7476 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-18 16:47:04.302  WARN [APP-ONE,,] 7476 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-18 16:47:04.406  INFO [APP-ONE,,] 7476 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-18 16:47:04.533  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-18 16:47:04.542  INFO [APP-ONE,,] 7476 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 16:47:04.582  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-18 16:47:04.582  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-18 16:47:04.583  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-18 16:47:04.583  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-18 16:47:04.583  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-18 16:47:04.583  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-18 16:47:04.584  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-18 16:47:05.005  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-18 16:47:05.013  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-18 16:47:05.020  INFO [APP-ONE,,] 7476 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-18 16:47:05.042  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666091825040 with initial instances count: 2
+2022-10-18 16:47:05.050  INFO [APP-ONE,,] 7476 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APP-ONE with eureka with status UP
+2022-10-18 16:47:05.051  INFO [APP-ONE,,] 7476 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666091825051, current=UP, previous=STARTING]
+2022-10-18 16:47:05.055  INFO [APP-ONE,,] 7476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-ONE/host.docker.internal:APP-ONE:8081: registering service...
+2022-10-18 16:47:05.085  INFO [APP-ONE,,] 7476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-18 16:47:05.086  INFO [APP-ONE,,] 7476 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-10-18 16:47:05.116  INFO [APP-ONE,,] 7476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-ONE/host.docker.internal:APP-ONE:8081 - registration status: 204
+2022-10-18 16:47:05.169  INFO [APP-ONE,,] 7476 --- [main] c.d.Appone.AppOneApplication             : Started AppOneApplication in 5.606 seconds (JVM running for 6.1)
+2022-10-18 16:47:27.351  INFO [APP-ONE,d98a495428ed589c,d98a495428ed589c] 7476 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-18 16:47:27.352  INFO [APP-ONE,d98a495428ed589c,d98a495428ed589c] 7476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-18 16:47:27.355  INFO [APP-ONE,d98a495428ed589c,d98a495428ed589c] 7476 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-10-18 16:47:27.393  INFO [APP-ONE,d98a495428ed589c,d98a495428ed589c] 7476 --- [http-nio-8081-exec-1] c.distributedTracing.Appone.Controller   : Welcome to Service 1
+2022-10-18 16:47:27.566 ERROR [APP-ONE,d98a495428ed589c,d98a495428ed589c] 7476 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$NotFound: [404] during [GET] to [http://APP-TWO/appOne] [Proxy#get()]: [{"timestamp":"2022-10-18T11:17:27.523+00:00","status":404,"error":"Not Found","path":"/appOne"}]] with root cause
+
+feign.FeignException$NotFound: [404] during [GET] to [http://APP-TWO/appOne] [Proxy#get()]: [{"timestamp":"2022-10-18T11:17:27.523+00:00","status":404,"error":"Not Found","path":"/appOne"}]
+	at feign.FeignException.clientErrorStatus(FeignException.java:219) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-11.8.jar:na]
+	at com.sun.proxy.$Proxy90.get(Unknown Source) ~[na:na]
+	at com.distributedTracing.Appone.Controller.get(Controller.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68) ~[spring-cloud-sleuth-instrumentation-3.1.4.jar:3.1.4]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131) ~[spring-cloud-sleuth-autoconfigure-3.1.4.jar:3.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103) ~[spring-cloud-sleuth-instrumentation-3.1.4.jar:3.1.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2022-10-18 16:47:32.700  INFO [APP-ONE,c81b7bddf69abc0d,c81b7bddf69abc0d] 7476 --- [http-nio-8081-exec-3] c.distributedTracing.Appone.Controller   : Welcome to Service 1
+2022-10-18 16:47:32.711 ERROR [APP-ONE,c81b7bddf69abc0d,c81b7bddf69abc0d] 7476 --- [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$NotFound: [404] during [GET] to [http://APP-TWO/appOne] [Proxy#get()]: [{"timestamp":"2022-10-18T11:17:32.709+00:00","status":404,"error":"Not Found","path":"/appOne"}]] with root cause
+
+feign.FeignException$NotFound: [404] during [GET] to [http://APP-TWO/appOne] [Proxy#get()]: [{"timestamp":"2022-10-18T11:17:32.709+00:00","status":404,"error":"Not Found","path":"/appOne"}]
+	at feign.FeignException.clientErrorStatus(FeignException.java:219) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:194) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-11.8.jar:na]
+	at com.sun.proxy.$Proxy90.get(Unknown Source) ~[na:na]
+	at com.distributedTracing.Appone.Controller.get(Controller.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68) ~[spring-cloud-sleuth-instrumentation-3.1.4.jar:3.1.4]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131) ~[spring-cloud-sleuth-autoconfigure-3.1.4.jar:3.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103) ~[spring-cloud-sleuth-instrumentation-3.1.4.jar:3.1.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2022-10-18 16:49:15.920  INFO [APP-ONE,,] 7100 --- [main] c.d.Appone.AppOneApplication             : Starting AppOneApplication using Java 15.0.2 on LAPTOP-IQ509ICI with PID 7100 (C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one\target\classes started by anish in C:\Users\anish\OneDrive\Desktop\git-repo\DistributedTracing\App-one)
+2022-10-18 16:49:15.924  INFO [APP-ONE,,] 7100 --- [main] c.d.Appone.AppOneApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-10-18 16:49:17.088  INFO [APP-ONE,,] 7100 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5a685914-970e-3e02-b608-d62acf4ca15c
+2022-10-18 16:49:17.783  INFO [APP-ONE,,] 7100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-18 16:49:17.798  INFO [APP-ONE,,] 7100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-18 16:49:17.798  INFO [APP-ONE,,] 7100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-18 16:49:17.952  INFO [APP-ONE,,] 7100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-18 16:49:17.952  INFO [APP-ONE,,] 7100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1958 ms
+2022-10-18 16:49:18.656  INFO [APP-ONE,,] 7100 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'APP-TWO' URL not provided. Will try picking an instance via load-balancing.
+2022-10-18 16:49:19.499  INFO [APP-ONE,,] 7100 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-18 16:49:19.842  WARN [APP-ONE,,] 7100 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-18 16:49:19.935  INFO [APP-ONE,,] 7100 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-18 16:49:20.036  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-18 16:49:20.046  INFO [APP-ONE,,] 7100 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-18 16:49:20.083  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-18 16:49:20.084  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-18 16:49:20.475  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-18 16:49:20.480  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-18 16:49:20.485  INFO [APP-ONE,,] 7100 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-18 16:49:20.492  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666091960491 with initial instances count: 3
+2022-10-18 16:49:20.503  INFO [APP-ONE,,] 7100 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APP-ONE with eureka with status UP
+2022-10-18 16:49:20.504  INFO [APP-ONE,,] 7100 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666091960504, current=UP, previous=STARTING]
+2022-10-18 16:49:20.507  INFO [APP-ONE,,] 7100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-ONE/host.docker.internal:APP-ONE:8081: registering service...
+2022-10-18 16:49:20.532  INFO [APP-ONE,,] 7100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-18 16:49:20.533  INFO [APP-ONE,,] 7100 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-10-18 16:49:20.565  INFO [APP-ONE,,] 7100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP-ONE/host.docker.internal:APP-ONE:8081 - registration status: 204
+2022-10-18 16:49:20.610  INFO [APP-ONE,,] 7100 --- [main] c.d.Appone.AppOneApplication             : Started AppOneApplication in 5.25 seconds (JVM running for 5.74)
+2022-10-18 16:49:26.072  INFO [APP-ONE,69da471862049499,69da471862049499] 7100 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-18 16:49:26.073  INFO [APP-ONE,69da471862049499,69da471862049499] 7100 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-18 16:49:26.075  INFO [APP-ONE,69da471862049499,69da471862049499] 7100 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-18 16:49:26.107  INFO [APP-ONE,69da471862049499,69da471862049499] 7100 --- [http-nio-8081-exec-1] c.distributedTracing.Appone.Controller   : Welcome to Service 1
+2022-10-18 16:49:26.262  INFO [APP-ONE,69da471862049499,69da471862049499] 7100 --- [http-nio-8081-exec-1] c.distributedTracing.Appone.Controller   : Back to Service 1, data is Done2
+2022-10-18 16:54:20.097  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 16:59:20.110  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:04:20.116  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:09:20.130  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:14:20.132  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:19:20.136  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:24:20.150  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-18 17:29:20.167  INFO [APP-ONE,,] 7100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

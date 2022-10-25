@@ -1,0 +1,25 @@
+Distributed Tracing
+
+Finding Execution Path and Order of execution of microservices is complex as they are running at different devices.
+
+- For 1 request multiple microservices may get executed in connected order
+- In case of complex design finding execution path(TRACE path) is difficult as they're running in different locations and multiple instances(isolated components)
+
+Spring Cloud : Sleuth and Zipkin
+
+- They are given by spring cloud used for distributed tracing.
+- Sleuth : Creates TraceId and SpanId to find execution path details and store in temp memory.
+- Zipkin Client : COllects data from Sleuth(Sampling) and send to UI(Zipkin Server)
+- ZipKin Server : A central server that will display all details of execution path.
+
+Trace ID - generated for execution flow from request to response 
+Span ID - for individual microservice
+Parent ID - previous ms span id is current ms parent id
+
+STEPS to connect zipkin server:
+Zipkin server download link(jar) : https://zipkin.io/pages/quickstart.html
+Zipkin run command : java -jar zipkin-server-2.23.19-exec.jar 
+Zipkin URL : http://127.0.0.1:9411/zipkin
+
+
+
